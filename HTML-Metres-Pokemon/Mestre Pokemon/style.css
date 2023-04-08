@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+/* Estilo global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo do header */
+  header {
+    background-color: #ffcb05;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    color: #1f1f1f;
+  }
+  
+  header a {
+    color: #1f1f1f;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem;
+  }
+
+  a {
+    color: blue; /* muda a cor do link */
+    text-decoration: underline; /* sublinha o link */
+  }
+
+  /* Estilo dos formulários de login e cadastro */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+  }
+  
+  .form-box {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-box h2 {
+    font-size: 1.5em !important;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .form-box input[type="text"],
+  .form-box input[type="password"],
+  .form-box select,
+  .form-box label {
+    display: block;
+  }
+  
+  .form-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-box input[type="submit"] {
+    background-color: #ffcb05;
+    color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-box input[type="submit"]:hover {
+    background-color: #f7c300;
+  }
+  
+  /* Estilo do formulário de login */
+  #login {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+  
+  #login, #cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #login .form-box {
+    margin-right: auto;
+  }
+  
+  #login form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #login form input[type="text"],
+  #login form input[type="password"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    width: 100%;
+  }
+
+  /* estilo do formulário de cadastro */
+#cadastro {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+  
+  #cadastro .form-box {
+    margin-left: auto;
+  }
+  
+  #cadastro form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #cadastro form input[type="text"],
+  #cadastro form input[type="password"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  /* estilo do formulário de login e cadastro */
+  .form-box {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-box h2 {
+    font-size: 1.5em !important;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .form-box input[type="text"],
+  .form-box input[type="password"],
+  .form-box select,
+  .form-box label {
+    display: block;
+  }
+  
+  .form-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-box input[type="submit"] {
+    background-color: #ffcb05;
+    color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-box input[type="submit"]:hover {
+    background-color: #f7c300;
+  }
+
+/* Estilo da imagem index*/  
+img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: 100vh;
+  }
+
+/* Estilo do Rodapé */  
+  footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: content-box;
+    overflow-x: hidden;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }  
+  
+/* estilo do formulário de cadastro de pokemon */
+#title {
+    background-color: #ffcb05;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #ff4500; /* exemplo de mudança de cor para laranja escuro */
+    font-size: 36px; /* exemplo de tamanho de fonte */
+    text-align: center; /* exemplo de centralização de texto */
+    margin: 0 auto;
+  }
+
+#pokemon-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  
+  #pokemon-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #pokemon-form input[type="text"],
+  #pokemon-form input[type="number"],
+  #pokemon-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+  }
+  
+  #pokemon-form select {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  #pokemon-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #pokemon-form input[type="submit"]:hover {
+    background-color: #f7c300;
+}
+/* Estilo da imagem de cadastro de Pokémon */
+#imagem-cadastro {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  #background-form {
+    background-image: url("Pokemons2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100px; /* ajuste o valor de acordo com o seu cabeçalho */
+    bottom: 80px; /* ajuste o valor de acordo com o seu rodapé */
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
